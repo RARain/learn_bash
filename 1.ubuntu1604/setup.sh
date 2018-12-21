@@ -1,11 +1,5 @@
 #! /bin/bash
 
-# Installing Pre-requisites:
-sudo apt-get install \
-	libssl1.0.0 \
-	libjpeg8 \
-	libgtk-3-0
-
 # 安装数组
 SETUP[0]=$PWD/setup.cuda.sh
 SETUP[1]=$PWD/setup.tensorrt.sh

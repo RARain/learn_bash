@@ -23,6 +23,18 @@ cd $DIR
 	if [ $? != 0 ]; then
 		exit 1
 	fi
+
+	# Installing Pre-requisites:
+	sudo apt-get install libssl1.0.0 \
+    					 libjpeg8 \
+    					 libgstreamer1.0-0 \
+    					 gstreamer-tools \
+    					 gstreamer1.0-plugins-good \
+    					 gstreamer1.0-plugins-bad \
+    					 gstreamer1.0-plugins-ugly \
+    					 gstreamer1.0-libav \
+    					 libgtk-3-0
+
 	sudo tar -xvf binaries.tbz2 -C /
 cd ..
 
