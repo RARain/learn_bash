@@ -4,6 +4,7 @@
 SETUP[0]=$PWD/setup.cuda.sh
 SETUP[1]=$PWD/setup.tensorrt.sh
 SETUP[2]=$PWD/setup.gstreamer.sh
+SETUP[3]=$PWD/setup.opencv.sh
 
 for i in ${SETUP[@]} ; do
 	bash $i
