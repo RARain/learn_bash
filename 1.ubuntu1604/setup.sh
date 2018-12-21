@@ -2,6 +2,7 @@
 
 # 安装数组
 SETUP[0]=$PWD/setup.cuda.sh
+SETUP[1]=$PWD/setup.tensorrt.sh
 
 for i in ${SETUP[@]} ; do
 	bash $i
