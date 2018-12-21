@@ -11,6 +11,7 @@ SETUP[2]=$PWD/setup.gstreamer.sh
 SETUP[3]=$PWD/setup.opencv.sh
 SETUP[4]=$PWD/setup.deepstream.sh
 SETUP[5]=$PWD/setup.onnx.sh
+SETUP[6]=$PWD/setup.kafka.sh
 
 for i in ${SETUP[@]} ; do
 	bash $i

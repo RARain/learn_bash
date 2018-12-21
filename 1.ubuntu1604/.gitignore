@@ -3,3 +3,4 @@ cuda*.run
 TensorRT*
 opencv*
 DeepStream*
+librdkafka*
