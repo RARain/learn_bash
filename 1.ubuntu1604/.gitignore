@@ -1,3 +1,5 @@
 # 安装文件
-cuda_*.run
-TensorRT*.tar.gz
+cuda*.run
+TensorRT*
+opencv*
+DeepStream*
