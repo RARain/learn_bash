@@ -9,11 +9,13 @@ PACKAGE=cuda_9.2.148_396.37_linux.run
 # 由于会过期而无法使用wget
 
 find . -maxdepth 1 -name "$PACKAGE"
-if [ $? == 0 ]; then
-	sudo bash $PACKAGE
-	if [ $? != 0 ]; then
-		exit $?
-	fi
+if [ $? != 0 ]; then
+	exit 1
+fi
+
+sudo bash $PACKAGE
+if [ $? != 0 ]; then
+	exit 1
 fi
 
 exit 0

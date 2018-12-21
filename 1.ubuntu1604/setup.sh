@@ -3,7 +3,7 @@
 # 安装cuda
 bash $PWD/setup.cuda.sh
 if [ $? != 0 ] ; then
-	exit $?
+	exit 1
 fi
 
 echo 安装结束
